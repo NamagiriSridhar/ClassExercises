@@ -44,7 +44,7 @@ public class blackJack_v3
 		   user_Total +=user_card.value;
 		   System.out.println("User's card "+user_card.name);
 	//	   System.out.println("test...."+user_card.value);
- 	    } while(user_Total < 21 && computer_Total < 21 && user_card.value != 0 && computer_card.value != 0); 
+ 	    } while(user_Total < 21 && computer_Total < 21 && user_card.value !=0 && computer_card.value != 0); 
 	    
 	    System.out.println("Computer card total: "+computer_Total);
 	    System.out.println("User card total: "+user_Total);
