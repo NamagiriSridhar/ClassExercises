@@ -1,0 +1,12 @@
+Building a dice game that randomizes numbers and prints out winners and losers in Java with Junit testing.
+
+Namagiri & Kanessa Mid Course 
+
+
+
+
+////
+player name?
+hashmap use remove?
+more methods
+tests

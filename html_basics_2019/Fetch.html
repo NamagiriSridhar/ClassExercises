@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Using Fetch</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Custom css -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="./index.html"><button type="button" class="btn">See Ajax calls</button></a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-head">
+                            <div  class="card-title">
+                                <h3>Log in page</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form action="#">
+                                User name:<br>
+                                <input type="text" name="username" placeholder="Input name here..">
+                                <br><br>
+                                <input type="submit" value="Submit">
+                            </form> 
+                            <button  type="button" id="signOut_Btn">Sign Out</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border border-dark">
+                        <div class="card-head">
+                            <h2 class="card-title">Avalible user names to enter</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>Bret</li>
+                                <li>Antonette</li>
+                                <li>Samantha</li>
+                                <li>Karianne</li>
+                                <li>Kamren</li>
+                                <li>Leopoldo_Corkery</li>
+                                <li>Elwyn.Skiles</li>
+                                <li>Maxime_Nienow</li>
+                                <li>Delphine</li>
+                                <li>Moriah.Stanton</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="apiDump" class="col-md-5">
+                    
+                </div>
+
+                <div id="signedIn" class="col-md-5">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </body>
+
+    <footer>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+        crossorigin="anonymous"></script>
+
+        <!-- Custom js-->
+        <script src="./Fetch.js"></script>
+    </footer>
+
+</html>
