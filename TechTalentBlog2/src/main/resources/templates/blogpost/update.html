@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Update a Blog Post</title>
+<div th:replace="/fragments/styling :: head-style"></div>
+</head>
+<body>
+	<div class="container">
+		<div th:replace="fragments/navbar :: navbar"></div>
+	
+		<h1>Update a New Blog Post</h1>
+		<!-- <h3 th:text="${id}"></h3> displays id of the selected post works only for id since thats the only one passed in the method-->
+		<form action="#" th:action="@{'/blog_posts/{id}'(id=${id})}" th:object="${post}" th:method="put">
+			<div class="form-group">
+ 				<label>Title:</label>
+ 				<input type="text" class="form-control"  th:field="*{title}" /> <!-- Since only one instance, do not use posts.title  -->
+			</div>
+				<div class="form-group">
+ 				<label>Author:</label>
+ 				<input type="text" class="form-control"  th:field="*{author}" /><!-- * gets parts of $-->
+			</div>
+				<div class="form-group">
+ 				<label>Blog Entry:</label>
+ 				<input type="text" class="form-control"  th:field="*{blogEntry}" />
+			</div>		
+			<button type="submit" class="btn btn-warning">Edit this post</button>
+		</form>
+	</div>
+	<div th:replace="/fragments/styling :: body-links"></div>
+</body>
+</html>
+

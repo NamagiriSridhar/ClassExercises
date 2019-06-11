@@ -1,0 +1,23 @@
+<!-- This will show only one single post -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<div th:replace="/fragments/styling :: head-style"></div>
+</head>
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+	<div class="container">
+	<h1 th:text="${posts}"></h1>	
+<!--  <div th:each="blog:${posts}">
+			<p th:objes="${blog}" />
+			  <p th:text="${blog.author}"/>
+				<p th:text="${blog.blogEntry}"/>
+		</div>
+			<p th:text="${post.title}"></p> //since only one need not use a loop
+			<p th:text="${post.author}"></p>
+			<p th:text="${post.blogEntry}"></p>-->
+	</div>
+	<div th:replace="/fragments/styling :: body-links"></div>
+
+</body>
+</html>
